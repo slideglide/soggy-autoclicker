@@ -1,4 +1,4 @@
-#include <Geode/Geode.hpp>
+#include <Geode/utils/cocos.hpp>
 #include <alphalaneous.alphas_geode_utils/include/ObjectModify.hpp>
 
 using namespace geode::prelude;
