@@ -22,8 +22,8 @@ class $nodeModify(AutoclickSogLayer, soggy_mod::SogLayer) {
 
         m_fields->m_toggler = CCMenuItemExt::createTogglerWithStandardSprites(
             1.f,
-            [this, interval](CCMenuItemToggler* sender) {
-                if (!sender->isToggled()) {
+            [this, interval](CCMenuItemToggler* toggler) {
+                if (toggler->isOn()) {
                     this->schedule(schedule_selector(AutoclickSogLayer::spamHonk), interval);
                 } else {
                     this->unschedule(schedule_selector(AutoclickSogLayer::spamHonk));
